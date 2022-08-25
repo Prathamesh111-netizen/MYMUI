@@ -463,7 +463,7 @@ export default function DashboardPanel() {
 	return (
 		<>
 			<Typography sx={{ mb: 1 }}>
-				Welcome, Prathamesh Pawar. All systems are running properly !
+				Welcome. All systems are running properly !
 			</Typography>
 			<AllDatacards />
 			<h3>Phone Analytics</h3>
