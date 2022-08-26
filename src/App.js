@@ -15,6 +15,7 @@ import Dashboard from "./pages/Dashboard";
 import CreateDonor from "./pages/CreateDonor";
 import DonorList from "./pages/DonorList";
 import DashboardPanel from "./components/dashboardPanel";
+import DashboardPanel2 from "./components/dashboardPanel2";
 
 function App() {
 	return (
@@ -23,14 +24,14 @@ function App() {
 				{/* first we will generate OTP, then we will create a new user, upon successful verification */}
 				<Route path="/" element={<Dashboard />}>
 					<Route path="" element={<DashboardPanel />} />
-					<Route path="donor/create" element={<CreateDonor />} />
-					<Route path="donor/list" element={<DonorList />} />
+					<Route path="data" element={<DashboardPanel2 />} />
+					{/* <Route path="donor/list" element={<DonorList />} /> */}
 					{/* <Route path="donation/list" element={<ChartComponent />} /> */}
 					{/* <Route path="donation/create" element={<ChartComponent />} /> */}
 				</Route>
-				<Route path="/register" element={<SignupPage />} />
+				{/* <Route path="/register" element={<SignupPage />} />
 				<Route path="/login" element={<LoginPage />} />
-				<Route path="/forgot-password" element={<ForgotPasswordPage />} />
+				<Route path="/forgot-password" element={<ForgotPasswordPage />} /> */}
 			</Routes>
 		</Router>
 	);

@@ -210,6 +210,42 @@ export default function MiniDrawer() {
 							</ListItem>
 						</Tooltip>
 					</Link>
+					<Link to="/data" style={LinkStyles}>
+						<Tooltip title={open ? "" : "Donation List"} placement="right">
+							<ListItem
+								key={"Donation List"}
+								disablePadding
+								sx={{
+									display: "block",
+									backgroundColor:
+										location.pathname === "/donation/list" ? blue[50] : "#fff"
+								}}
+							>
+								<ListItemButton
+									sx={{
+										minHeight: 48,
+										justifyContent: open ? "initial" : "center",
+										px: 2.5
+									}}
+								>
+									<ListItemIcon
+										sx={{
+											minWidth: 0,
+											mr: open ? 3 : "auto",
+											justifyContent: "center",
+											color: "#2393d2"
+										}}
+									>
+										<span class="material-symbols-outlined">receipt_long</span>
+									</ListItemIcon>
+									<ListItemText
+										primary={"Data Analytics"}
+										sx={{ opacity: open ? 1 : 0 }}
+									/>
+								</ListItemButton>
+							</ListItem>
+						</Tooltip>
+					</Link>
 				</List>
 				<Divider />
 			</Drawer>
