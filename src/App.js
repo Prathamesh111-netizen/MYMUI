@@ -12,8 +12,10 @@ import SignupPage from "./pages/auth/SignupPage";
 import ForgotPasswordPage from "./pages/auth/ForgotPasswordPage";
 
 import Dashboard from "./pages/Dashboard";
-import CreateDonor from "./pages/CreateDonor";
-import DonorList from "./pages/DonorList";
+import CreateDonor from "./pages/donorSection/CreateDonor";
+import DonorList from "./pages/donorSection/DonorList";
+import DonationList from "./pages/donationSection/DonationList"
+import CreateDonation from "./pages/donationSection/CreateDonation"
 import DashboardPanel from "./components/dashboardPanel";
 
 function App() {
@@ -25,8 +27,8 @@ function App() {
 					<Route path="" element={<DashboardPanel />} />
 					<Route path="donor/create" element={<CreateDonor />} />
 					<Route path="donor/list" element={<DonorList />} />
-					{/* <Route path="donation/list" element={<ChartComponent />} /> */}
-					{/* <Route path="donation/create" element={<ChartComponent />} /> */}
+					 <Route path="donation/list" element={<DonationList />} /> 
+					<Route path="donation/create" element={<CreateDonation />} /> 
 				</Route>
 				<Route path="/register" element={<SignupPage />} />
 				<Route path="/login" element={<LoginPage />} />
