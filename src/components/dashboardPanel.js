@@ -466,7 +466,7 @@ export default function DashboardPanel() {
 				Welcome, Prathamesh Pawar. All systems are running properly !
 			</Typography>
 			<AllDatacards />
-			<h3>Phone Analytics</h3>
+			<h3>Donations Analytics</h3>
 
 			<Grid container spacing={4} columns={16} sx={{ alignItems: "center" }}>
 				{/* <Grid item xs={12}>
